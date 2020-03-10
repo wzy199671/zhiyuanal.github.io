@@ -28,7 +28,7 @@
 <meta property="og:description" content="DOCKER + MySQL">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-10T08:42:53.000Z">
-<meta property="article:modified_time" content="2020-03-10T11:37:01.153Z">
+<meta property="article:modified_time" content="2020-03-10T11:37:55.967Z">
 <meta property="article:author" content="Zhiyuan Wang">
 <meta name="twitter:card" content="summary">
 
@@ -172,7 +172,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-03-10 01:42:53 / Modified: 04:37:01" itemprop="dateCreated datePublished" datetime="2020-03-10T01:42:53-07:00">2020-03-10</time>
+              <time title="Created: 2020-03-10 01:42:53 / Modified: 04:37:55" itemprop="dateCreated datePublished" datetime="2020-03-10T01:42:53-07:00">2020-03-10</time>
             </span>
 
           
@@ -190,18 +190,12 @@
 
 <h3 id="1-Pull-image"><a href="#1-Pull-image" class="headerlink" title="1. Pull image"></a>1. Pull image</h3><p><code>docker pull mysql</code></p>
 <h3 id="2-Check-images"><a href="#2-Check-images" class="headerlink" title="2. Check images"></a>2. Check images</h3><p><code>sudo docker images</code></p>
-<p>###3. Run image in a container</p>
-<p><code>sudo docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql</code></p>
-<p>###4. Check status</p>
-<p><code>docker container ls</code></p>
-<p>###5. Execute the bash of this container</p>
-<p><code>sudo docker exec -it mysql bash</code></p>
-<p>###6. Run MySQL</p>
-<p><code>mysql -uroot -p123456</code></p>
-<p>###7. SQL</p>
-<p><code>CREATE DATABASE XXX;</code><br><code>drop database XXX;</code><br><code>use database XXX;</code></p>
-<p>###8. Save Docker Image</p>
-<p><code>docker commit afcaf46e8305 centos-vim</code><br><code>docker IMAGE_ID DOCKER_ID/imagename:version</code><br><code>docker push DOCKER_ID/imagename</code></p>
+<h3 id="3-Run-image-in-a-container"><a href="#3-Run-image-in-a-container" class="headerlink" title="3. Run image in a container"></a>3. Run image in a container</h3><p><code>sudo docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql</code></p>
+<h3 id="4-Check-status"><a href="#4-Check-status" class="headerlink" title="4. Check status"></a>4. Check status</h3><p><code>docker container ls</code></p>
+<h3 id="5-Execute-the-bash-of-this-container"><a href="#5-Execute-the-bash-of-this-container" class="headerlink" title="5. Execute the bash of this container"></a>5. Execute the bash of this container</h3><p><code>sudo docker exec -it mysql bash</code></p>
+<h3 id="6-Run-MySQL"><a href="#6-Run-MySQL" class="headerlink" title="6. Run MySQL"></a>6. Run MySQL</h3><p><code>mysql -uroot -p123456</code></p>
+<h3 id="7-SQL"><a href="#7-SQL" class="headerlink" title="7. SQL"></a>7. SQL</h3><p><code>CREATE DATABASE XXX;</code><br><code>drop database XXX;</code><br><code>use database XXX;</code></p>
+<h3 id="8-Save-Docker-Image"><a href="#8-Save-Docker-Image" class="headerlink" title="8. Save Docker Image"></a>8. Save Docker Image</h3><p><code>docker commit afcaf46e8305 centos-vim</code><br><code>docker IMAGE_ID DOCKER_ID/imagename:version</code><br><code>docker push DOCKER_ID/imagename</code></p>
 
     </div>
 
@@ -273,7 +267,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#DOCKER-MySQL"><span class="nav-number">1.</span> <span class="nav-text">DOCKER + MySQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Pull-image"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. Pull image</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Check-images"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. Check images</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#DOCKER-MySQL"><span class="nav-number">1.</span> <span class="nav-text">DOCKER + MySQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Pull-image"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. Pull image</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Check-images"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. Check images</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Run-image-in-a-container"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. Run image in a container</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Check-status"><span class="nav-number">1.0.4.</span> <span class="nav-text">4. Check status</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Execute-the-bash-of-this-container"><span class="nav-number">1.0.5.</span> <span class="nav-text">5. Execute the bash of this container</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Run-MySQL"><span class="nav-number">1.0.6.</span> <span class="nav-text">6. Run MySQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-SQL"><span class="nav-number">1.0.7.</span> <span class="nav-text">7. SQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Save-Docker-Image"><span class="nav-number">1.0.8.</span> <span class="nav-text">8. Save Docker Image</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
