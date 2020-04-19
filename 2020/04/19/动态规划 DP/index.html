@@ -28,7 +28,7 @@
 <meta property="og:description" content="动态规划 Dynamic Programming动态规划在 Wiki 上的定义。  动态规划（英語：Dynamic programming，简称 DP）是一种在数学、管理科学、计算机科学、经济学和生物信息学中使用的，通过把原问题分解为相对简单的子问题的方式求解复杂问题的方法。动态规划常常适用于有重叠子问题和最优子结构性质的问题，动态规划方法所耗时间往往远少于朴素解法。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-19T16:14:12.448Z">
-<meta property="article:modified_time" content="2020-04-19T16:28:35.443Z">
+<meta property="article:modified_time" content="2020-04-19T16:30:30.873Z">
 <meta property="article:author" content="Zhiyuan Wang">
 <meta name="twitter:card" content="summary">
 
@@ -172,7 +172,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-04-19 09:14:12 / Modified: 09:28:35" itemprop="dateCreated datePublished" datetime="2020-04-19T09:14:12-07:00">2020-04-19</time>
+              <time title="Created: 2020-04-19 09:14:12 / Modified: 09:30:30" itemprop="dateCreated datePublished" datetime="2020-04-19T09:14:12-07:00">2020-04-19</time>
             </span>
 
           
@@ -195,11 +195,9 @@
 <p>动态规划的适用情况有三个适用情况的要求。</p>
 <blockquote>
 <p>最优子结构性质。如果问题的最优解所包含的子问题的解也是最优的，我们就称该问题具有最优子结构性质（即满足最优化原理）。最优子结构性质为动态規劃算法解决问题提供了重要线索。</p>
-</blockquote>
 <p>无后效性。即子问题的解一旦确定，就不再改变，不受在这之后、包含它的更大的问题的求解决策影响。</p>
-<blockquote>
-</blockquote>
 <p>子问题重叠性质。子问题重叠性质是指在用递归算法自顶向下对问题进行求解时，每次产生的子问题并不总是新问题，有些子问题会被重复计算多次。动态規劃算法正是利用了这种子问题的重叠性质，对每一个子问题只计算一次，然后将其计算结果保存在一个表格中，当再次需要计算已经计算过的子问题时，只是在表格中简单地查看一下结果，从而获得较高的效率。</p>
+</blockquote>
 <h2 id="动态规划的思考方法"><a href="#动态规划的思考方法" class="headerlink" title="动态规划的思考方法"></a>动态规划的思考方法</h2><p>我认为动态规划的核心是 “把原问题分解为相对简单的子问题的方式求解复杂问题” 这一段话。其实许多算法或者解决问题的方案都体现了这个思想，比如分治算法，递归，递推等等。此类问题其实有着相似的思考流程。</p>
 <h3 id="1-定义问题"><a href="#1-定义问题" class="headerlink" title="1,  定义问题"></a>1,  定义问题</h3><p>首先我们要定义想解决的问题。如何合适的定义问题是动态规划中最困难和需要灵机一动的地方，可以结合动态规划的常见套路模板学习。合适的问题定义可以减少思考难度，提高算法效率。这里结合一道简单的动态规划来理解定义问题。</p>
 <blockquote>
