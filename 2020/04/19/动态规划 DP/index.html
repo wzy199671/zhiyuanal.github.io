@@ -28,7 +28,7 @@
 <meta property="og:description" content="动态规划 Dynamic Programming动态规划在 Wiki 上的定义。  动态规划（英語：Dynamic programming，简称 DP）是一种在数学、管理科学、计算机科学、经济学和生物信息学中使用的，通过把原问题分解为相对简单的子问题的方式求解复杂问题的方法。动态规划常常适用于有重叠子问题和最优子结构性质的问题，动态规划方法所耗时间往往远少于朴素解法。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-19T16:14:12.448Z">
-<meta property="article:modified_time" content="2020-04-19T16:32:12.407Z">
+<meta property="article:modified_time" content="2020-04-19T16:34:41.179Z">
 <meta property="article:author" content="Zhiyuan Wang">
 <meta name="twitter:card" content="summary">
 
@@ -172,7 +172,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-04-19 09:14:12 / Modified: 09:32:12" itemprop="dateCreated datePublished" datetime="2020-04-19T09:14:12-07:00">2020-04-19</time>
+              <time title="Created: 2020-04-19 09:14:12 / Modified: 09:34:41" itemprop="dateCreated datePublished" datetime="2020-04-19T09:14:12-07:00">2020-04-19</time>
             </span>
 
           
@@ -254,7 +254,7 @@
 <td align="right">x</td>
 </tr>
 </tbody></table>
-<p>我们要求的即为最后一个格子的值。 那么我们就有两种填格子的方法，一种是自上而下，另一种是自下而上。</p>
+<p>我们要求的即为最后一个格子的值。 那么我们就有两种填格子的方法，一种是自上而下，另一种是自下而上。注意这里的自上而下和自下而上和表格的上下左右没有关系，而是对两种不同方法的描述。</p>
 <h3 id="4，-自上而下-Top-Down"><a href="#4，-自上而下-Top-Down" class="headerlink" title="4， 自上而下 Top - Down"></a>4， 自上而下 Top - Down</h3><p>自上而下解法即为通过递归调用，从最大的问题出发，找他们的子问题是否计算过。如果计算过，直接返回结果，如果没有计算过，则递归向下解决。</p>
 <p>自上而下解法的好处在于我们不需要思考需要按照什么顺序来填格子。另外当我们得到最后一个格子的时候，这个表格中有一些值可能仍然是空的，这样我们就节省了计算这些不必要结果的时间。</p>
 <p>自上而下解法的缺点在于我们通过递归调用，递归带来的函数栈消耗比自下而上解法要大。下面是抢劫问题自上而下解法的代码。</p>
