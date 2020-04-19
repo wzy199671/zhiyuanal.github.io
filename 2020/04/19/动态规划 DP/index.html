@@ -28,7 +28,7 @@
 <meta property="og:description" content="动态规划 Dynamic Programming动态规划在 Wiki 上的定义。  动态规划（英語：Dynamic programming，简称 DP）是一种在数学、管理科学、计算机科学、经济学和生物信息学中使用的，通过把原问题分解为相对简单的子问题的方式求解复杂问题的方法。动态规划常常适用于有重叠子问题和最优子结构性质的问题，动态规划方法所耗时间往往远少于朴素解法。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-19T16:14:12.448Z">
-<meta property="article:modified_time" content="2020-04-19T16:41:00.157Z">
+<meta property="article:modified_time" content="2020-04-19T16:42:54.528Z">
 <meta property="article:author" content="Zhiyuan Wang">
 <meta name="twitter:card" content="summary">
 
@@ -172,7 +172,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-04-19 09:14:12 / Modified: 09:41:00" itemprop="dateCreated datePublished" datetime="2020-04-19T09:14:12-07:00">2020-04-19</time>
+              <time title="Created: 2020-04-19 09:14:12 / Modified: 09:42:54" itemprop="dateCreated datePublished" datetime="2020-04-19T09:14:12-07:00">2020-04-19</time>
             </span>
 
           
@@ -215,7 +215,7 @@
 <h3 id="2，找到子问题和问题的关系"><a href="#2，找到子问题和问题的关系" class="headerlink" title="2，找到子问题和问题的关系"></a>2，找到子问题和问题的关系</h3><p>定义问题和找子问题即为许多动态规划教程提到的找<strong>状态转移方程</strong>，关键是<strong>对于我们定义的问题，找到子问题和母问题的关系来简化问题的求解</strong>，其实思考过程和递归，分支问题十分类似。高中数学中的数学归纳法，递推式也是类似的思考方向。</p>
 <p>同样以 Leetcode 198 作为例子。 我们已经有了问题的函数表示 getMaxMoney(int i) 。<br>观察问题，我们发现我们不可以选择两间相邻的房屋，因此我们的问题可以分解成一个选择，两个方向。 </p>
 <p>选择 ：是否抢劫房屋 i 。</p>
-<p>方向 1 : 如果不抢劫房屋 i， 那么我们可以抢劫房屋 i - 1。在这个方向下，getMaxMoney(i) = getMaxMoney(i - 1) 。</p>
+<p>方向 1 ： 如果不抢劫房屋 i， 那么我们可以抢劫房屋 i - 1。在这个方向下，getMaxMoney(i) = getMaxMoney(i - 1) 。</p>
 <p>方向 2 ： 如果抢劫房屋i， 那么我们不可以抢劫房屋 i - 1。在这个方向下，getMaxMoney(i) = getMaxMoney(i - 2)  + money[i]。</p>
 <p>当我们弄清楚了我们的选择和结果之后，我们需要的就是比较哪种结果更好，即为选取两种结果的最大值。到此为止，我们就找到了子问题和问题的关系。</p>
 <p>用代码表示</p>
