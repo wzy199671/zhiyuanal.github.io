@@ -20,27 +20,31 @@
     var CONFIG = {"hostname":"zyalll.github.io","root":"/blog/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Al">
-<meta property="og:url" content="https://zyalll.github.io/blog/index.html">
+  <meta name="description" content="#动态规划 Dynamic Programming 动态规划在 Wiki 上的定义。  动态规划（英語：Dynamic programming，简称 DP）是一种在数学、管理科学、计算机科学、经济学和生物信息学中使用的，通过把原问题分解为相对简单的子问题的方式求解复杂问题的方法。动态规划常常适用于有重叠子问题和最优子结构性质的问题，动态规划方法所耗时间往往远少于朴素解法。  动态规划的适用情况有三">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DP教程">
+<meta property="og:url" content="https://zyalll.github.io/blog/2020/04/19/DP%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Al">
+<meta property="og:description" content="#动态规划 Dynamic Programming 动态规划在 Wiki 上的定义。  动态规划（英語：Dynamic programming，简称 DP）是一种在数学、管理科学、计算机科学、经济学和生物信息学中使用的，通过把原问题分解为相对简单的子问题的方式求解复杂问题的方法。动态规划常常适用于有重叠子问题和最优子结构性质的问题，动态规划方法所耗时间往往远少于朴素解法。  动态规划的适用情况有三">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-19T16:14:12.448Z">
+<meta property="article:modified_time" content="2020-04-19T16:19:32.834Z">
 <meta property="article:author" content="Zhiyuan Wang">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://zyalll.github.io/blog/">
+<link rel="canonical" href="https://zyalll.github.io/blog/2020/04/19/DP%E6%95%99%E7%A8%8B/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false
+    isHome : false,
+    isPost : true
   };
 </script>
 
-  <title>Al</title>
+  <title>DP教程 | Al</title>
   
 
 
@@ -140,10 +144,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
     <link itemprop="mainEntityOfPage" href="https://zyalll.github.io/blog/2020/04/19/DP%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -157,8 +161,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/blog/2020/04/19/DP%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">DP教程</a>
+          DP教程
         </h1>
 
         <div class="post-meta">
@@ -183,7 +186,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>#动态规划 Dynamic Programming</p>
+        <p>#动态规划 Dynamic Programming</p>
 <p>动态规划在 Wiki 上的定义。</p>
 <blockquote>
 <p>动态规划（英語：Dynamic programming，简称 DP）是一种在数学、管理科学、计算机科学、经济学和生物信息学中使用的，通过把原问题分解为相对简单的子问题的方式求解复杂问题的方法。<br>动态规划常常适用于有重叠子问题和最优子结构性质的问题，动态规划方法所耗时间往往远少于朴素解法。</p>
@@ -269,90 +272,33 @@
 <p>其次，我们需要考虑计算每一个格子所需要的时间。 我们需要观察状态转移方程来得到这部分的时间复杂度。 抢劫犯问题该部分时间为 O(1)。</p>
 <p>得到两部分的结果之后，最后结果为时间复杂度相乘。 因此对于抢劫犯问题，时间复杂度为 O(n)。</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://zyalll.github.io/blog/2020/03/10/Docker-MySql/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/blog/images/avatar.gif">
-      <meta itemprop="name" content="Zhiyuan Wang">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Al">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/blog/2020/03/10/Docker-MySql/" class="post-title-link" itemprop="url">Docker + MySql</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-03-10 01:42:53 / Modified: 04:37:55" itemprop="dateCreated datePublished" datetime="2020-03-10T01:42:53-07:00">2020-03-10</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="DOCKER-MySQL"><a href="#DOCKER-MySQL" class="headerlink" title="DOCKER + MySQL"></a>DOCKER + MySQL</h1>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/blog/2020/03/10/Docker-MySql/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/blog/2020/03/10/Docker-MySql/" rel="prev" title="Docker + MySql">
+      <i class="fa fa-chevron-left"></i> Docker + MySql
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
   
 
   </div>
-
-  
-
 
 
           </div>
@@ -403,6 +349,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#5，自下而上-Bottom-Up"><span class="nav-number">1.</span> <span class="nav-text">5，自下而上 Bottom - Up</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6，-基本值-Base-Case"><span class="nav-number">2.</span> <span class="nav-text">6， 基本值 Base Case</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7，-时间复杂度分析"><span class="nav-number">3.</span> <span class="nav-text">7， 时间复杂度分析</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
